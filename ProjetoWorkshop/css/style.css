@@ -47,8 +47,9 @@ select {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  border: none;
+  border: black 1px solid;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 input[type="submit"] {
   color: white;
@@ -88,4 +89,48 @@ footer {
 }
 .description h3 {
   font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 15px;
+  }
+  footer {
+    width: 100%;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  .picture {
+    margin-bottom: 26px;
+  }
+
+  .description {
+    text-align: left;
+    max-width: 45%;
+    margin-left: 25px;
+  }
+  .formContainer {
+    margin: auto;
+    float: none;
+    border-radius: 30px;
+  }
+
+  p {
+    width: 100%;
+  }
+  section {
+    background-image: none;
+    background: linear-gradient(
+      45deg,
+      #48c5ce,
+      #54bab9,
+      #18978f,
+      #e9dac1,
+      #f7ecde
+    );
+    background-size: 300% 300%;
+  }
+  .formContainer {
+    background-color: white;
+  }
 }
